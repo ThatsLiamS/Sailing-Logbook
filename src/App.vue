@@ -1,16 +1,21 @@
 <template>
-    <SidebarComponent/>
+	<SidebarComponent/>
 	<router-view></router-view>
+	<footer id='footer' class='footer'>
+		<FooterComponent/>
+	</footer>
 </template>
 
 <script>
-    import "bootstrap/dist/css/bootstrap.min.css";
+	import "bootstrap/dist/css/bootstrap.min.css";
 	import SidebarComponent from './components/Sidebar.vue';
+	import FooterComponent from './components/Footer.vue';
 
 	export default {
 		name: 'App',
 		components: {
-            SidebarComponent,
+			SidebarComponent,
+			FooterComponent,
 		},
 
 	};
