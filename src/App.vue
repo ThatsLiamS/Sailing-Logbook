@@ -1,12 +1,16 @@
 <template>
+    <SidebarComponent/>
 	<router-view></router-view>
 </template>
 
 <script>
+    import "bootstrap/dist/css/bootstrap.min.css";
+	import SidebarComponent from './components/Sidebar.vue';
 
 	export default {
 		name: 'App',
 		components: {
+            SidebarComponent,
 		},
 
 	};
